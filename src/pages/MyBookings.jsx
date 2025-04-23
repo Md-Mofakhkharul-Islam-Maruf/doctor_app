@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router";
+import Chart from "../components/ui/Chart";
 
 const MyBookings = () => {
   const appointments = localStorage.getItem("appointments") || [];
@@ -20,6 +21,8 @@ const MyBookings = () => {
 
   return (
     <section className="w-6xl mx-auto  px-14 py-10 space-y-5">
+      {bookings?.length > 0 && <Chart bookings={bookings} />}
+
       <div className=" space-y-2 p-5  text-center">
         <h1 className="text-3xl font-bold space-y-2">My Today Appointments</h1>
         <p>

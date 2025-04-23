@@ -1,5 +1,16 @@
 import drImage from '../assets/doctor-sample.png';
 const DoctorProfile = () => {
+  // const {
+  //   regNo,
+  //   name,
+  //   image,
+  //   education,
+  //   speciality,
+  //   experience,
+  //   designation,
+  //   availability,
+  // } = doctor;
+  
   return (
     <div>
       {/* Doctors profile */}

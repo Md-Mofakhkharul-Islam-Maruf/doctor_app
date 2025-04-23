@@ -1,8 +1,12 @@
 import { useEffect } from "react";
 import image from "../assets/banner-img-1.png";
-import icon from "../assets/success-review.png";
+import reviweIcon from "../assets/success-review.png";
+import doctorIcon from "../assets/success-doctor.png";
+import patientIcon from "../assets/success-patients.png";
+import staffIcon from "../assets/success-staffs.png";
 import { useState } from "react";
 import DoctorCard from "../components/ui/DoctorCard";
+import CountUp from "react-countup";
 const Home = () => {
   const [doctors, setDoctors] = useState([]);
   const [showAll, setShowAll] = useState(false);
@@ -109,24 +113,32 @@ const Home = () => {
         </div>
       </div>
       <div className="w-13/15 mx-auto text-center my-5 flex justify-between gap-5">
-        <div className="w-[300px] bg-white px-10 py-10 rounded-2xl">
-          <img src={icon} alt="" />
-          <h2 className="font-bold text-3xl text-start">199+</h2>
+        <div className="w-[300px] bg-white px-10 py-10 rounded-2xl space-y-4">
+          <img src={doctorIcon} alt="" />
+          <h2 className="font-bold text-3xl text-start">
+            <CountUp end={199} />+
+          </h2>
           <p className="text-start">Total Doctor</p>
         </div>
-        <div className="w-[300px] bg-white px-10 py-10 rounded-2xl">
-          <img src={icon} alt="" />
-          <h2 className="font-bold text-3xl text-start">199+</h2>
+        <div className="w-[300px] bg-white px-10 py-10 rounded-2xl space-y-4">
+          <img src={reviweIcon} alt="" />
+          <h2 className="font-bold text-3xl text-start">
+            <CountUp end={467} />+
+          </h2>
           <p className="text-start">Total Doctor</p>
         </div>
-        <div className="w-[300px] bg-white px-10 py-10 rounded-2xl">
-          <img src={icon} alt="" />
-          <h2 className="font-bold text-3xl text-start">199+</h2>
+        <div className="w-[300px] bg-white px-10 py-10 rounded-2xl space-y-4">
+          <img src={patientIcon} alt="" />
+          <h2 className="font-bold text-3xl text-start">
+            <CountUp end={1900} />+
+          </h2>
           <p className="text-start">Total Doctor</p>
         </div>
-        <div className="w-[300px] bg-white px-10 py-10 rounded-2xl">
-          <img src={icon} alt="" />
-          <h2 className="font-bold text-3xl text-start">199+</h2>
+        <div className="w-[300px] bg-white px-10 py-10 rounded-2xl space-y-4">
+          <img src={staffIcon} alt="" />
+          <h2 className="font-bold text-3xl text-start">
+            <CountUp end={300} />+
+          </h2>
           <p className="text-start">Total Doctor</p>
         </div>
       </div>

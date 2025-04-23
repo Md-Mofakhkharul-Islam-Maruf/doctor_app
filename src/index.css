@@ -1,0 +1,18 @@
+@import "tailwindcss";
+@plugin "daisyui" {
+    themes: light --default;
+}
+
+@plugin "daisyui/theme" {
+    name: "light";
+    default: true;
+    --color-primary: #176AE5;
+    --color-secondary: #0F0F0F;
+    --color-accent: #00C49F;
+    --color-success: #09982F;
+    --color-warning: #FFA000;
+    --color-error: #FF0000;
+}
+body {
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
